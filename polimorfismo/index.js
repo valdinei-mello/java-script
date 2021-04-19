@@ -49,6 +49,22 @@ ContaCorrente.prototype.sacar = function (valor) {
     this.versaldo();
 };
 
+
+
+function ContaPoupaca(ag, conta, saldo) {
+    Conta.call(this, ag, conta, saldo);
+
+};
+
+ContaPoupaca.prototype = Object.create(Conta.prototype);
+ContaPoupaca.prototype.constructor = ContaPoupaca;
+
+
 const cc = new ContaCorrente(55,244,0,100);
 cc.depositar(10)
 cc.sacar(111)
+
+
+const cp = new ContaPoupaca(12, 33, 0);
+cp.depositar(10)
+cp.sacar(110);
