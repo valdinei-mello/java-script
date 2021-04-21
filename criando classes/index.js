@@ -1,10 +1,10 @@
-class Pessoa{
-    constructor(nome, sobrenome){
+class Pessoa {
+    constructor(nome, sobrenome) {
         this.nome = nome;
         this.sobrenome = sobrenome;
     }
 
-    beber(){
+    beber() {
         console.log(`${this.nome} está bebendo !`)
     }
 }
@@ -12,12 +12,12 @@ class Pessoa{
 
 //comparativo com claas X function
 
-function Pessoa1(nome, sobrenome){
+function Pessoa1(nome, sobrenome) {
     this.nome = nome;
     this.sobrenome = sobrenome;
 }
 
-Pessoa1.prototype.beber = function(){
+Pessoa1.prototype.beber = function () {
     console.log(`${this.nome} está bebendo !`)
 }
 
